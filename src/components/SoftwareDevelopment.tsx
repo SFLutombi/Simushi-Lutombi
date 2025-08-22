@@ -8,98 +8,116 @@ const SoftwareDevelopment: React.FC = () => {
       title: "E-commerce Platform",
       description: "Full-stack online shopping solution",
       icon: "🛒",
-      color: "bg-indigo-500"
+      color: "border-primary/20 text-primary",
+      hoverColor: "hover:border-primary/40"
     },
     {
       title: "Task Management App",
       description: "Collaborative project organization",
       icon: "📋",
-      color: "bg-emerald-500"
+      color: "border-accent/20 text-accent",
+      hoverColor: "hover:border-accent/40"
     },
     {
       title: "Real-time Chat",
       description: "WebSocket-based messaging",
       icon: "💬",
-      color: "bg-pink-500"
+      color: "border-secondary/20 text-secondary",
+      hoverColor: "hover:border-secondary/40"
     },
     {
       title: "Data Visualization",
       description: "Interactive charts and graphs",
       icon: "📊",
-      color: "bg-amber-500"
+      color: "border-warning/20 text-warning",
+      hoverColor: "hover:border-warning/40"
     },
     {
       title: "API Gateway",
       description: "Microservices orchestration",
       icon: "🔗",
-      color: "bg-teal-500"
+      color: "border-primary/20 text-primary",
+      hoverColor: "hover:border-primary/40"
     },
     {
       title: "Mobile App",
       description: "Cross-platform development",
       icon: "📱",
-      color: "bg-rose-500"
+      color: "border-accent/20 text-accent",
+      hoverColor: "hover:border-accent/40"
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-bg-grid bg-grid relative">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Software Development</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Building scalable, user-centric applications that solve complex problems. 
-            From web applications to mobile apps, each project demonstrates clean code, 
-            modern architecture, and exceptional user experience.
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center space-x-3 mb-6">
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-subtle">
+              <span className="text-white font-semibold text-sm">💻</span>
+            </div>
+            <h2 className="text-heading text-text-primary font-sf">Software Development</h2>
+          </div>
+          <div className="w-20 h-0.5 bg-primary rounded-full mx-auto mb-8"></div>
+          <p className="text-body max-w-4xl mx-auto text-text-secondary">
+            Code is the magic layer that makes engineering come alive. I like using software to
+            automate the boring stuff, simulate complex systems, or just make things more user-
+            friendly. For me, coding isn’t separate from engineering. It’s the language that makes
+            technology smarter and more adaptable.
           </p>
         </div>
 
         {/* Featured Project */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 mb-24 items-center">
           <div className="order-1">
-            <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-2xl flex items-center justify-center">
-                <div className="text-8xl">💻</div>
+            <div className="relative group">
+              <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-secondary/10 border border-border-light rounded-2xl flex items-center justify-center relative overflow-hidden shadow-elevated">
+                <div className="text-8xl relative z-10">💻</div>
+                
+                {/* Subtle accent ring */}
+                <div className="absolute inset-4 rounded-2xl border border-primary/20"></div>
               </div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
+              
+              {/* Professional accent */}
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent rounded-full flex items-center justify-center shadow-elevated">
                 <span className="text-white text-4xl">⚡</span>
               </div>
             </div>
           </div>
 
           <div className="order-2">
-            <Card className="border-0 shadow-lg">
+            <Card className="bg-card-bg border-border-light shadow-subtle hover:shadow-elevated transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-3xl font-bold text-gray-900">
+                <CardTitle className="text-3xl font-semibold text-text-primary font-sf mb-3">
                   AI-Powered Learning Platform
                 </CardTitle>
-                <CardDescription className="text-lg text-gray-600">
+                <CardDescription className="text-lg text-primary font-medium">
                   Personalized education with machine learning
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 leading-relaxed">
+              <CardContent className="space-y-6">
+                <p className="text-text-secondary leading-relaxed">
                   Developed a comprehensive learning management system that uses artificial 
                   intelligence to personalize educational content for each student. The platform 
                   features adaptive learning paths, real-time progress tracking, and intelligent 
                   content recommendations based on learning patterns.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">
+                <div className="flex flex-wrap gap-3">
+                  <span className="px-3 py-1 bg-gray-50 border border-primary/20 text-primary rounded-lg text-sm font-medium">
                     React
                   </span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-accent/20 text-accent rounded-lg text-sm font-medium">
                     Node.js
                   </span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-secondary/20 text-secondary rounded-lg text-sm font-medium">
                     TensorFlow
                   </span>
-                  <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-danger/20 text-danger rounded-lg text-sm font-medium">
                     MongoDB
                   </span>
                 </div>
-                <Button className="w-full bg-indigo-600 hover:bg-indigo-700">
+                <Button className="w-full bg-primary hover:bg-primary-dark transition-all duration-300 shadow-subtle hover:shadow-elevated hover:-translate-y-0.5 font-medium">
                   View Project Details
                 </Button>
               </CardContent>
@@ -112,14 +130,14 @@ const SoftwareDevelopment: React.FC = () => {
           {bentoProjects.map((project, index) => (
             <Card 
               key={index} 
-              className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border-0"
+              className={`bg-card-bg border-border-light group cursor-pointer hover:shadow-elevated ${project.hoverColor} transition-all duration-300`}
             >
               <CardContent className="p-6 text-center">
-                <div className={`w-16 h-16 ${project.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gray-50 border ${project.color} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300`}>
                   <span className="text-3xl">{project.icon}</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-600">{project.description}</p>
+                <h3 className="font-semibold text-text-primary mb-2 font-sf">{project.title}</h3>
+                <p className="text-sm text-text-secondary">{project.description}</p>
               </CardContent>
             </Card>
           ))}

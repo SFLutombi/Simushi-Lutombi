@@ -10,7 +10,7 @@ import CV from './components/CV';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-dark-bg">
+      <div className="min-h-screen bg-bg-light">
         <Navbar />
         <Routes>
           <Route path="/" element={

@@ -1,95 +1,93 @@
 import React from 'react';
 import Button from './ui/button';
-import { Card, CardContent } from './ui/card';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-subtle-gradient pt-16 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          {/* Left side - Profile Picture */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative group">
-              {/* Main profile circle */}
-              <div className="w-80 h-80 rounded-full bg-dark-card border border-dark-border/50 relative overflow-hidden shadow-elevated">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-8xl font-bold text-text-muted">👨‍💻</div>
-                </div>
-                
-                {/* Subtle accent ring */}
-                <div className="absolute inset-4 rounded-full border border-primary/20"></div>
+    <section className="min-h-screen bg-bg-light bg-grid bg-grid relative overflow-hidden">
+      {/* Main Content */}
+      <div className="container mx-auto px-6 pt-10 relative z-10">
+        <div className="flex items-center justify-between min-h-[calc(100vh-6rem)]">
+          
+          {/* Left side - Logo and Content */}
+          <div className="flex-1 max-w-2xl">
+            {/* Logo */}
+            <div className="mb-16">
+              <h1 className="text-6xl font-bold text-primary tracking-tight">OKKIO</h1>
+            </div>
+            
+            {/* Content */}
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-2xl font-medium text-secondary mb-2">Michael Okkio</h2>
+                <h3 className="text-5xl font-bold text-primary mb-6">Engineering Student & Builder</h3>
               </div>
               
-              {/* Professional accent */}
-              <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-accent rounded-full flex items-center justify-center shadow-elevated">
-                <span className="text-white text-2xl">⚡</span>
-              </div>
+              <p className="text-lg text-text-secondary leading-relaxed max-w-lg">
+                I’m an engineering student pursuing a Mechatronics Degree at UCT. I believe in the
+                interconnectedness of different fields and the value of being a versatile problem
+                solver. By exploring a broad range of disciplines, I aim to bridge gaps between
+                ideas, teams, and technologies.
+              </p>
             </div>
           </div>
 
-          {/* Right side - Content */}
-          <div className="text-center lg:text-left">
-            <Card className="glass border-dark-border/30 shadow-subtle">
-              <CardContent className="p-0">
-                {/* Name with professional styling */}
-                <div className="mb-8">
-                  <h1 className="text-display text-text-primary mb-4 font-sf">
-                    John Doe
-                  </h1>
-                  <div className="w-24 h-0.5 bg-primary rounded-full mx-auto lg:mx-0"></div>
+          {/* Right side - Spray Paint Can */}
+          <div className="flex-1 flex justify-center items-center relative">
+            <div className="relative transform rotate-12">
+              {/* Spray Paint Can */}
+              <div className="w-80 h-96 relative">
+                {/* Can Body */}
+                <div className="absolute inset-0 bg-primary rounded-t-3xl rounded-b-2xl shadow-elevated">
+                  {/* Can texture and details */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-t-3xl rounded-b-2xl"></div>
+                  
+                  {/* Metallic top rim */}
+                  <div className="absolute top-0 left-4 right-4 h-3 bg-gray-300 rounded-t-3xl"></div>
+                  
+                  {/* Metallic bottom rim */}
+                  <div className="absolute bottom-0 left-4 right-4 h-3 bg-gray-300 rounded-b-2xl"></div>
+                  
+                  {/* "OK" text on can */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+                    <span className="text-8xl font-bold tracking-wider">O</span>
+                    <span className="text-8xl font-bold tracking-wider -mt-4">K</span>
+                  </div>
+                  
+                  {/* Paint splatter texture */}
+                  <div className="absolute inset-0 opacity-20">
+                    <div className="absolute top-8 left-8 w-4 h-4 bg-white rounded-full"></div>
+                    <div className="absolute top-16 right-12 w-2 h-2 bg-white rounded-full"></div>
+                    <div className="absolute bottom-20 left-16 w-3 h-3 bg-white rounded-full"></div>
+                    <div className="absolute bottom-12 right-8 w-1 h-1 bg-white rounded-full"></div>
+                  </div>
                 </div>
                 
-                {/* Title */}
-                <h2 className="text-heading text-primary mb-8 font-sf">
-                  Software Engineer & Cybersecurity Specialist
-                </h2>
-                
-                {/* Description */}
-                <p className="text-body mb-10 max-w-2xl">
-                  Passionate about creating innovative solutions that bridge the gap between 
-                  engineering excellence and cutting-edge technology. I specialize in full-stack 
-                  development, cybersecurity, and building robust systems that solve real-world problems.
-                </p>
-                
-                {/* Skills with professional styling */}
-                <div className="flex flex-wrap gap-3 mb-10 justify-center lg:justify-start">
-                  <span className="px-4 py-2 bg-dark-card border border-primary/20 text-primary rounded-lg text-sm font-medium hover:border-primary/40 transition-colors duration-300">
-                    React
-                  </span>
-                  <span className="px-4 py-2 bg-dark-card border border-secondary/20 text-secondary rounded-lg text-sm font-medium hover:border-secondary/40 transition-colors duration-300">
-                    Node.js
-                  </span>
-                  <span className="px-4 py-2 bg-dark-card border border-accent/20 text-accent rounded-lg text-sm font-medium hover:border-accent/40 transition-colors duration-300">
-                    Python
-                  </span>
-                  <span className="px-4 py-2 bg-dark-card border border-danger/20 text-danger rounded-lg text-sm font-medium hover:border-danger/40 transition-colors duration-300">
-                    Cybersecurity
-                  </span>
-                  <span className="px-4 py-2 bg-dark-card border border-warning/20 text-warning rounded-lg text-sm font-medium hover:border-warning/40 transition-colors duration-300">
-                    AWS
-                  </span>
+                {/* Nozzle */}
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div className="w-8 h-12 bg-primary rounded-t-full"></div>
                 </div>
                 
-                {/* Action buttons */}
-                <div className="flex gap-4 justify-center lg:justify-start">
-                  <Button 
-                    size="lg" 
-                    className="bg-primary hover:bg-primary-dark transition-all duration-300 shadow-subtle hover:shadow-elevated hover:-translate-y-0.5 font-medium"
-                  >
-                    View Projects
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 font-medium"
-                  >
-                    Download Resume
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                {/* Shadow */}
+                <div className="absolute -bottom-4 left-8 right-8 h-4 bg-black/10 rounded-full blur-sm"></div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        {/* Bottom Right - Call to Action Buttons */}
+        <div className="absolute bottom-12 right-6 space-y-4">
+          <Button 
+            size="lg" 
+            className="w-48 bg-secondary hover:bg-secondary/90 text-white font-medium rounded-lg shadow-subtle"
+          >
+            get in touch
+          </Button>
+          <Button 
+            size="lg" 
+            className="w-48 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg shadow-subtle"
+          >
+            let's get started
+          </Button>
         </div>
       </div>
     </section>

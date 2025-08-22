@@ -8,88 +8,101 @@ const CyberSecurity: React.FC = () => {
       title: "Network Monitor",
       description: "Real-time threat detection",
       icon: "🛡️",
-      color: "bg-red-500"
+      color: "border-primary/20 text-primary",
+      hoverColor: "hover:border-primary/40"
     },
     {
       title: "Penetration Testing",
       description: "Security assessment tools",
       icon: "🔍",
-      color: "bg-orange-500"
+      color: "border-accent/20 text-accent",
+      hoverColor: "hover:border-accent/40"
     },
     {
       title: "Encryption System",
       description: "Advanced cryptography",
       icon: "🔐",
-      color: "bg-yellow-500"
+      color: "border-secondary/20 text-secondary",
+      hoverColor: "hover:border-secondary/40"
     },
     {
       title: "Firewall Management",
       description: "Network security control",
       icon: "🔥",
-      color: "bg-red-600"
+      color: "border-warning/20 text-warning",
+      hoverColor: "hover:border-warning/40"
     },
     {
       title: "Vulnerability Scanner",
       description: "Automated security audit",
       icon: "🔎",
-      color: "bg-purple-500"
+      color: "border-danger/20 text-danger",
+      hoverColor: "hover:border-danger/40"
     },
     {
       title: "Incident Response",
       description: "Security breach handling",
       icon: "🚨",
-      color: "bg-pink-500"
+      color: "border-primary/20 text-primary",
+      hoverColor: "hover:border-primary/40"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-white relative">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Cyber Security</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Protecting digital assets through advanced security solutions and ethical hacking. 
-            From threat detection to incident response, each project strengthens the security 
-            posture of organizations and individuals.
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center space-x-3 mb-6">
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-subtle">
+              <span className="text-white font-semibold text-sm">🔒</span>
+            </div>
+            <h2 className="text-heading text-text-primary font-sf">Cyber Security</h2>
+          </div>
+          <div className="w-20 h-0.5 bg-primary rounded-full mx-auto mb-8"></div>
+          <p className="text-body max-w-4xl mx-auto text-text-secondary">
+            What’s the point of building clever systems if they can’t protect themselves?
+            Cybersecurity keeps me thinking ahead: about vulnerabilities, risks, and the human side
+            of tech safety. It’s not just about defense; it’s about building trust into every line
+            of code and every piece of hardware.
           </p>
         </div>
 
         {/* Featured Project */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 mb-24 items-center">
           <div className="order-2 lg:order-1">
-            <Card className="border-0 shadow-lg">
+            <Card className="bg-card-bg border-border-light shadow-subtle hover:shadow-elevated transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-3xl font-bold text-gray-900">
+                <CardTitle className="text-3xl font-semibold text-text-primary font-sf mb-3">
                   AI-Powered Threat Intelligence Platform
                 </CardTitle>
-                <CardDescription className="text-lg text-gray-600">
+                <CardDescription className="text-lg text-primary font-medium">
                   Machine learning-based security monitoring
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 leading-relaxed">
+              <CardContent className="space-y-6">
+                <p className="text-text-secondary leading-relaxed">
                   Built a comprehensive threat intelligence platform that uses artificial 
                   intelligence to detect, analyze, and respond to cybersecurity threats in 
                   real-time. The system integrates multiple data sources, applies machine 
                   learning algorithms for pattern recognition, and provides automated incident 
                   response capabilities.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
+                <div className="flex flex-wrap gap-3">
+                  <span className="px-3 py-1 bg-gray-50 border border-primary/20 text-primary rounded-lg text-sm font-medium">
                     Python
                   </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-accent/20 text-accent rounded-lg text-sm font-medium">
                     TensorFlow
                   </span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-secondary/20 text-secondary rounded-lg text-sm font-medium">
                     Elasticsearch
                   </span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-50 border border-danger/20 text-danger rounded-lg text-sm font-medium">
                     Docker
                   </span>
                 </div>
-                <Button className="w-full bg-red-600 hover:bg-red-700">
+                <Button className="w-full bg-primary hover:bg-primary-dark transition-all duration-300 shadow-subtle hover:shadow-elevated hover:-translate-y-0.5 font-medium">
                   View Project Details
                 </Button>
               </CardContent>
@@ -97,11 +110,16 @@ const CyberSecurity: React.FC = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-red-400 to-orange-600 rounded-2xl flex items-center justify-center">
-                <div className="text-8xl">🔒</div>
+            <div className="relative group">
+              <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-secondary/10 border border-border-light rounded-2xl flex items-center justify-center relative overflow-hidden shadow-elevated">
+                <div className="text-8xl relative z-10">🔒</div>
+                
+                {/* Subtle accent ring */}
+                <div className="absolute inset-4 rounded-2xl border border-primary/20"></div>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
+              
+              {/* Professional accent */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full flex items-center justify-center shadow-elevated">
                 <span className="text-white text-4xl">🤖</span>
               </div>
             </div>
@@ -113,14 +131,14 @@ const CyberSecurity: React.FC = () => {
           {bentoProjects.map((project, index) => (
             <Card 
               key={index} 
-              className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border-0"
+              className={`bg-card-bg border-border-light group cursor-pointer hover:shadow-elevated ${project.hoverColor} transition-all duration-300`}
             >
               <CardContent className="p-6 text-center">
-                <div className={`w-16 h-16 ${project.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gray-50 border ${project.color} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300`}>
                   <span className="text-3xl">{project.icon}</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-600">{project.description}</p>
+                <h3 className="font-semibold text-text-primary mb-2 font-sf">{project.title}</h3>
+                <p className="text-sm text-text-secondary">{project.description}</p>
               </CardContent>
             </Card>
           ))}

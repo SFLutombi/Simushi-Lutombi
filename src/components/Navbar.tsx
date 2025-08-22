@@ -31,21 +31,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-dark-border/50">
+    <nav className="fixed top-12 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-border-light">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div 
-            className="flex items-center space-x-3 cursor-pointer group" 
+            className="flex items-center cursor-pointer group" 
             onClick={() => navigate('/')}
           >
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shadow-subtle">
-              <span className="text-white font-semibold text-sm">JD</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-semibold text-lg text-text-primary">John Doe</span>
-              <span className="text-xs text-primary font-medium tracking-wide">Engineer</span>
-            </div>
+            <h1 className="text-3xl font-bold text-primary tracking-tight">OKKIO</h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -85,7 +79,7 @@ const Navbar: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-dark-card/50 transition-colors duration-300"
+            className="md:hidden p-2 rounded-lg text-text-secondary hover:text-primary hover:bg-gray-100 transition-colors duration-300"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -99,7 +93,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-dark-border/50 bg-dark-surface/80 backdrop-blur-md">
+          <div className="md:hidden py-4 border-t border-border-light bg-white/95 backdrop-blur-md">
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection('hero')}

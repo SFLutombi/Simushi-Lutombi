@@ -6,19 +6,31 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#007AFF',
-        'primary-dark': '#0056CC',
-        secondary: '#5856D6',
-        accent: '#34C759',
-        warning: '#FF9500',
-        danger: '#FF3B30',
-        'dark-bg': '#000000',
-        'dark-surface': '#1C1C1E',
-        'dark-card': '#2C2C2E',
-        'dark-border': '#38383A',
-        'text-primary': '#FFFFFF',
-        'text-secondary': '#EBEBF5',
-        'text-muted': '#8E8E93',
+        // Eco green color scheme (replacing orange)
+        primary: '#22C55E', // Vibrant eco green
+        'primary-dark': '#16A34A', // Darker eco green
+        'primary-light': '#4ADE80', // Lighter eco green
+        
+        // Supporting colors from the design
+        secondary: '#1E40AF', // Dark blue for "Plan based" text
+        accent: '#22C55E', // Same as primary for consistency
+        warning: '#F59E0B',
+        danger: '#EF4444',
+        
+        // Background colors
+        'bg-light': '#F8FAFC', // Light gray background
+        'bg-grid': '#F1F5F9', // Slightly darker for grid pattern
+        
+        // Text colors
+        'text-primary': '#1E293B', // Dark gray for main text
+        'text-secondary': '#64748B', // Medium gray for secondary text
+        'text-muted': '#94A3B8', // Light gray for muted text
+        'text-white': '#FFFFFF',
+        
+        // Card and border colors
+        'card-bg': '#FFFFFF',
+        'border-light': '#E2E8F0',
+        'border-medium': '#CBD5E1',
       },
       fontFamily: {
         'sf': ['SF Pro Display', 'system-ui', 'sans-serif'],
@@ -31,13 +43,16 @@ module.exports = {
         'subtle-glow': 'subtle-glow 3s ease-in-out infinite',
       },
       boxShadow: {
-        'subtle': '0 4px 20px rgba(0, 0, 0, 0.3)',
-        'elevated': '0 8px 40px rgba(0, 0, 0, 0.4)',
-        'primary-glow': '0 0 20px rgba(0, 122, 255, 0.3)',
+        'subtle': '0 4px 20px rgba(0, 0, 0, 0.1)',
+        'elevated': '0 8px 40px rgba(0, 0, 0, 0.15)',
+        'primary-glow': '0 0 20px rgba(34, 197, 94, 0.3)',
       },
       backgroundImage: {
-        'subtle-gradient': 'linear-gradient(135deg, #000000 0%, #1C1C1E 100%)',
-        'primary-subtle': 'linear-gradient(135deg, #007AFF 0%, #0056CC 100%)',
+        'grid-pattern': 'linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)',
+        'grid-bg': 'linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'grid': '20px 20px',
       },
       fontSize: {
         'display': ['clamp(2.5rem, 5vw, 4rem)', {
