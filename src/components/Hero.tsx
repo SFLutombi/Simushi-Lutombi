@@ -12,13 +12,13 @@ const Hero: React.FC = () => {
           <div className="flex-1 max-w-2xl">
             {/* Logo */}
             <div className="mb-16">
-              <h1 className="text-6xl font-bold text-primary tracking-tight">OKKIO</h1>
+              <h1 className="text-6xl font-bold text-primary tracking-tight">LUTOMBI</h1>
             </div>
             
             {/* Content */}
             <div className="space-y-6">
               <div>
-                <h2 className="text-2xl font-medium text-secondary mb-2">Michael Okkio</h2>
+                <h2 className="text-2xl font-medium text-secondary mb-2">Simushi Fortune Lutombi</h2>
                 <h3 className="text-5xl font-bold text-primary mb-6">Engineering Student & Builder</h3>
               </div>
               
@@ -78,13 +78,13 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-12 right-6 space-y-4">
           <Button 
             size="lg" 
-            className="w-48 bg-secondary hover:bg-secondary/90 text-white font-medium rounded-lg shadow-subtle"
+            className="w-48 btn-secondary text-sm uppercase tracking-wide"
           >
             get in touch
           </Button>
           <Button 
             size="lg" 
-            className="w-48 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg shadow-subtle"
+            className="w-48 btn-primary text-sm uppercase tracking-wide"
           >
             let's get started
           </Button>

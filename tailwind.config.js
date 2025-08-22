@@ -12,7 +12,7 @@ module.exports = {
         'primary-light': '#4ADE80', // Lighter eco green
         
         // Supporting colors from the design
-        secondary: '#1E40AF', // Dark blue for "Plan based" text
+        secondary: '#14B8A6', // Teal (harmonious with eco green)
         accent: '#22C55E', // Same as primary for consistency
         warning: '#F59E0B',
         danger: '#EF4444',
