@@ -5,44 +5,44 @@ import Button from './ui/button';
 const Engineering: React.FC = () => {
   const bentoProjects = [
     {
-      title: "Smart Home Automation",
-      description: "IoT-based home control system",
-      icon: "🏠",
+      title: "8X8 LED Matrix Game",
+      description: "Built using arduino",
+      icon: "🎮",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     },
     {
-      title: "Drone Navigation",
-      description: "Autonomous flight control algorithms",
+      title: "Wireless Charging Drone Landing Gear",
+      description: "Designed in CAD",
       icon: "🚁",
-      color: "border-primary/20 text-primary",
-      hoverColor: "hover:border-primary/40"
+      color: "border-accent/20 text-accent",
+      hoverColor: "hover:border-accent/40"
     },
     {
-      title: "Robotic Arm",
-      description: "Precision control system",
-      icon: "🤖",
+      title: "RFID Smart Lock",
+      description: "Built using arduino",
+      icon: "🔐",
       color: "border-secondary/20 text-secondary",
       hoverColor: "hover:border-secondary/40"
     },
     {
-      title: "Solar Panel Tracker",
-      description: "Maximum efficiency optimization",
-      icon: "☀️",
+      title: "House Plant Environment Tracker",
+      description: "IoT monitoring system",
+      icon: "🌱",
       color: "border-warning/20 text-warning",
       hoverColor: "hover:border-warning/40"
     },
     {
-      title: "Water Quality Monitor",
-      description: "Real-time sensor network",
-      icon: "💧",
+      title: "Micromouse",
+      description: "Autonomous maze solver",
+      icon: "🐭",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     },
     {
-      title: "Smart Grid Controller",
-      description: "Energy distribution optimization",
-      icon: "⚡",
+      title: "Modular Snap Together Electronics Kit",
+      description: "Design phase for kids",
+      icon: "🧩",
       color: "border-accent/20 text-accent",
       hoverColor: "hover:border-accent/40"
     }
@@ -137,7 +137,7 @@ const Engineering: React.FC = () => {
             >
               <CardContent className="p-6 text-center">
                 <div className={`w-16 h-16 bg-gray-50 border ${project.color} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300`}>
-                  <span className="text-white text-3xl">{project.icon}</span>
+                  <span className="text-3xl">{project.icon}</span>
                 </div>
                 <h3 className="font-semibold text-text-primary mb-2 font-sf">{project.title}</h3>
                 <p className="text-sm text-text-secondary">{project.description}</p>

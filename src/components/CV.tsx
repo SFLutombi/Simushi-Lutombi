@@ -5,72 +5,74 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 const CV: React.FC = () => {
   const handleDownload = () => {
     // Create a simple text-based CV for download
-    const cvContent = `JOHN DOE
-Software Engineer & Cybersecurity Specialist
+    const cvContent = `SIMUSHI FORTUNE LUTOMBI
+Engineering Student & Builder
 
 CONTACT INFORMATION
-Email: john.doe@email.com
-Phone: +1 (555) 123-4567
-LinkedIn: linkedin.com/in/johndoe
-GitHub: github.com/johndoe
-Location: City, State, Country
+Email: ltmsim001@myuct.ac.za
+Phone: +27 64 133 6645
+LinkedIn: Simushi Lutombi
+GitHub: SFLutombi
+Location: Cape Town, South Africa
 
 PROFESSIONAL SUMMARY
-Passionate software engineer with expertise in full-stack development, cybersecurity, and engineering solutions. Proven track record of delivering innovative projects that solve complex problems and drive business value.
+Engineering student passionate about building practical solutions that bridge different fields. I enjoy working with electronics, software, and sustainable design to create innovative projects. Currently pursuing a Mechatronics degree while gaining hands-on experience through various projects and work opportunities.
 
 TECHNICAL SKILLS
-Programming Languages: JavaScript, TypeScript, Python, Java, C++
-Frontend: React, Vue.js, HTML5, CSS3, Tailwind CSS
-Backend: Node.js, Express.js, Django, Flask
-Databases: MongoDB, PostgreSQL, MySQL, Redis
-Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD
-Cybersecurity: Penetration Testing, Network Security, Cryptography
-Engineering: ROS, Computer Vision, Machine Learning
+Programming Languages: Python, JavaScript, TypeScript, C++
+Frontend: React, Next.js, HTML5, CSS3, Tailwind CSS
+Backend: Django Ninja, Node.js
+Databases: MongoDB, PostgreSQL
+Hardware: Arduino, Circuit Design, CAD Design
+AI/ML: Gemini AI, TensorFlow, Machine Learning
+Cybersecurity: CTF Challenges, Digital Forensics, Penetration Testing
+Engineering: Mechatronics, IoT, Sustainable Design
 
 PROFESSIONAL EXPERIENCE
 
-Senior Software Engineer | Tech Company Inc. | 2022 - Present
-• Led development of AI-powered learning platform serving 10,000+ users
-• Implemented microservices architecture improving system performance by 40%
-• Mentored junior developers and conducted code reviews
+Tutor and Builder | Invent Afrika | 2025 - Present
+• Teaching and mentoring students in various technical subjects
+• Building and developing innovative solutions and projects
 
-Software Engineer | Innovation Labs | 2020 - 2022
-• Developed autonomous vehicle control system using computer vision and ML
-• Built real-time threat detection platform for cybersecurity applications
-• Collaborated with cross-functional teams to deliver high-impact solutions
+Web Developer | JTP Solutions | 2023 - 2024
+• Developed web applications and digital solutions
+• Collaborated with teams to deliver client projects
 
 EDUCATION
-Bachelor of Science in Computer Engineering
-University Name | Graduated 2020
-GPA: 3.8/4.0
+Bachelor of Engineering in Mechatronics
+University of Cape Town (UCT) | Current Student
 
 CERTIFICATIONS
-• AWS Certified Solutions Architect
-• Certified Ethical Hacker (CEH)
-• CompTIA Security+
+• Make.com
+• CS-50
 
 PROJECTS
 
-Autonomous Vehicle Control System
-• Integrated computer vision, sensor fusion, and ML algorithms
-• Achieved 95% accuracy in obstacle detection and path planning
-• Technologies: Python, ROS, TensorFlow, OpenCV
+Power Bank from Recycled Vape Batteries
+• Designed sustainable power solution using recycled lithium-ion batteries
+• Implemented battery management and safety protection circuits
+• Technologies: Circuit Design, Battery Management, Sustainable Design
 
-AI-Powered Learning Platform
-• Built personalized education system with adaptive learning paths
-• Implemented real-time progress tracking and content recommendations
-• Technologies: React, Node.js, MongoDB, TensorFlow
+Webwriter - AI-powered Webapp
+• Built comprehensive writing platform for webserialists
+• Integrated Gemini AI for enhanced writing assistance
+• Technologies: Next.js, Django Ninja, Figma, Gemini AI
 
-Threat Intelligence Platform
-• Developed ML-based security monitoring system
-• Integrated multiple data sources for real-time threat detection
-• Technologies: Python, Elasticsearch, Docker, Machine Learning
+CTF Write-ups & Cybersecurity Challenges
+• Completed various CTF challenges including forensics, web exploitation, and cryptography
+• Demonstrated practical cybersecurity skills through hands-on challenges
+• Platforms: Sanren, HackTheBox, TryHackMe, PicoCTF
+
+8X8 LED Matrix Game & RFID Smart Lock
+• Built interactive games and security systems using Arduino
+• Implemented embedded systems and IoT solutions
+• Technologies: Arduino, Electronics, Circuit Design
 
 LANGUAGES
-English (Native), Spanish (Intermediate), French (Basic)
+English (Fluent), Local Languages
 
 INTERESTS
-Artificial Intelligence, Cybersecurity, Robotics, Renewable Energy, Open Source Contribution
+Sustainable Engineering, IoT Development, Cybersecurity, AI Integration, Educational Technology
 
 REFERENCES
 Available upon request.`;
@@ -79,7 +81,7 @@ Available upon request.`;
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'John_Doe_CV.txt';
+    a.download = 'Simushi_Lutombi_CV.txt';
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);
@@ -93,7 +95,7 @@ Available upon request.`;
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Curriculum Vitae</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional experience, skills, and achievements in software engineering and cybersecurity
+            Professional experience, skills, and achievements in engineering and software development
           </p>
         </div>
 
@@ -121,19 +123,19 @@ Available upon request.`;
             <CardContent className="grid md:grid-cols-2 gap-4">
               <div>
                 <p className="font-semibold">Email</p>
-                <p className="text-gray-600">john.doe@email.com</p>
+                <p className="text-gray-600">ltmsim001@myuct.ac.za</p>
               </div>
               <div>
                 <p className="font-semibold">Phone</p>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+27 64 133 6645</p>
               </div>
               <div>
                 <p className="font-semibold">LinkedIn</p>
-                <p className="text-gray-600">linkedin.com/in/johndoe</p>
+                <p className="text-gray-600">Simushi Lutombi</p>
               </div>
               <div>
                 <p className="font-semibold">GitHub</p>
-                <p className="text-gray-600">github.com/johndoe</p>
+                <p className="text-gray-600">SFLutombi</p>
               </div>
             </CardContent>
           </Card>
@@ -145,9 +147,9 @@ Available upon request.`;
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 leading-relaxed">
-                Passionate software engineer with expertise in full-stack development, cybersecurity, and engineering solutions. 
-                Proven track record of delivering innovative projects that solve complex problems and drive business value. 
-                Experienced in leading development teams and implementing cutting-edge technologies.
+                Engineering student passionate about building practical solutions that bridge different fields. 
+                I enjoy working with electronics, software, and sustainable design to create innovative projects. 
+                Currently pursuing a Mechatronics degree while gaining hands-on experience through various projects and work opportunities.
               </p>
             </CardContent>
           </Card>
@@ -162,21 +164,20 @@ Available upon request.`;
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Programming Languages</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
-                    <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">TypeScript</span>
-                    <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span>
-                    <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Java</span>
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">C++</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">JavaScript</span>
+                    <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">TypeScript</span>
+                    <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">C++</span>
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Technologies</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">Technologies & Tools</h4>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">React</span>
-                    <span className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm">Node.js</span>
-                    <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">MongoDB</span>
-                    <span className="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">AWS</span>
-                    <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Docker</span>
+                    <span className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm">Next.js</span>
+                    <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Django Ninja</span>
+                    <span className="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Arduino</span>
+                    <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Gemini AI</span>
                   </div>
                 </div>
               </div>
@@ -190,21 +191,19 @@ Available upon request.`;
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="border-l-4 border-blue-500 pl-6">
-                <h4 className="font-semibold text-lg text-gray-900">Senior Software Engineer</h4>
-                <p className="text-blue-600 font-medium">Tech Company Inc. | 2022 - Present</p>
+                <h4 className="font-semibold text-lg text-gray-900">Tutor and Builder</h4>
+                <p className="text-blue-600 font-medium">Invent Afrika | 2025 - Present</p>
                 <ul className="text-gray-700 mt-2 space-y-1">
-                  <li>• Led development of AI-powered learning platform serving 10,000+ users</li>
-                  <li>• Implemented microservices architecture improving system performance by 40%</li>
-                  <li>• Mentored junior developers and conducted code reviews</li>
+                  <li>• Teaching and mentoring students in various technical subjects</li>
+                  <li>• Building and developing innovative solutions and projects</li>
                 </ul>
               </div>
               <div className="border-l-4 border-green-500 pl-6">
-                <h4 className="font-semibold text-lg text-gray-900">Software Engineer</h4>
-                <p className="text-green-600 font-medium">Innovation Labs | 2020 - 2022</p>
+                <h4 className="font-semibold text-lg text-gray-900">Web Developer</h4>
+                <p className="text-green-600 font-medium">JTP Solutions | 2023 - 2024</p>
                 <ul className="text-gray-700 mt-2 space-y-1">
-                  <li>• Developed autonomous vehicle control system using computer vision and ML</li>
-                  <li>• Built real-time threat detection platform for cybersecurity applications</li>
-                  <li>• Collaborated with cross-functional teams to deliver high-impact solutions</li>
+                  <li>• Developed web applications and digital solutions</li>
+                  <li>• Collaborated with teams to deliver client projects</li>
                 </ul>
               </div>
             </CardContent>
@@ -217,9 +216,8 @@ Available upon request.`;
             </CardHeader>
             <CardContent>
               <div className="border-l-4 border-purple-500 pl-6">
-                <h4 className="font-semibold text-lg text-gray-900">Bachelor of Science in Computer Engineering</h4>
-                <p className="text-purple-600 font-medium">University Name | Graduated 2020</p>
-                <p className="text-gray-700 mt-1">GPA: 3.8/4.0</p>
+                <h4 className="font-semibold text-lg text-gray-900">Bachelor of Engineering in Mechatronics</h4>
+                <p className="text-purple-600 font-medium">University of Cape Town (UCT) | Current Student</p>
               </div>
             </CardContent>
           </Card>
@@ -231,9 +229,8 @@ Available upon request.`;
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">AWS Certified Solutions Architect</span>
-                <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full">Certified Ethical Hacker (CEH)</span>
-                <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">CompTIA Security+</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Make.com</span>
+                <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full">CS-50</span>
               </div>
             </CardContent>
           </Card>

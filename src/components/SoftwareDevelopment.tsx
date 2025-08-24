@@ -5,44 +5,44 @@ import Button from './ui/button';
 const SoftwareDevelopment: React.FC = () => {
   const bentoProjects = [
     {
-      title: "E-commerce Platform",
-      description: "Full-stack online shopping solution",
-      icon: "🛒",
+      title: "Caption Engine",
+      description: "AI powered transcription webapp",
+      icon: "🎬",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project organization",
-      icon: "📋",
+      title: "BloomFund",
+      description: "Blockchain microinsurance for SA mothers",
+      icon: "🌱",
       color: "border-accent/20 text-accent",
       hoverColor: "hover:border-accent/40"
     },
     {
-      title: "Real-time Chat",
-      description: "WebSocket-based messaging",
-      icon: "💬",
+      title: "SiteSnag",
+      description: "AI powered website name generator",
+      icon: "🌐",
       color: "border-secondary/20 text-secondary",
       hoverColor: "hover:border-secondary/40"
     },
     {
-      title: "Data Visualization",
-      description: "Interactive charts and graphs",
-      icon: "📊",
+      title: "Flashcards Webapp",
+      description: "Helping students study",
+      icon: "📚",
       color: "border-warning/20 text-warning",
       hoverColor: "hover:border-warning/40"
     },
     {
-      title: "API Gateway",
-      description: "Microservices orchestration",
-      icon: "🔗",
+      title: "Twitter Content Generator",
+      description: "Uses AI to generate twitter content",
+      icon: "🐦",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     },
     {
-      title: "Mobile App",
-      description: "Cross-platform development",
-      icon: "📱",
+      title: "Webscraping Automation",
+      description: "Using make.com",
+      icon: "🤖",
       color: "border-accent/20 text-accent",
       hoverColor: "hover:border-accent/40"
     }

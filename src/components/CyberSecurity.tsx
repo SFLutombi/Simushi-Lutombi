@@ -5,44 +5,44 @@ import Button from './ui/button';
 const CyberSecurity: React.FC = () => {
   const bentoProjects = [
     {
-      title: "Network Monitor",
-      description: "Real-time threat detection",
-      icon: "🛡️",
+      title: "Sanren Forensics",
+      description: "Memory dump analysis challenge",
+      icon: "🔍",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     },
     {
-      title: "Penetration Testing",
-      description: "Security assessment tools",
-      icon: "🔍",
+      title: "HackTheBox Web",
+      description: "SQL injection & XSS exploitation",
+      icon: "🌐",
       color: "border-accent/20 text-accent",
       hoverColor: "hover:border-accent/40"
     },
     {
-      title: "Encryption System",
-      description: "Advanced cryptography",
+      title: "TryHackMe Crypto",
+      description: "RSA & AES decryption challenge",
       icon: "🔐",
       color: "border-secondary/20 text-secondary",
       hoverColor: "hover:border-secondary/40"
     },
     {
-      title: "Firewall Management",
-      description: "Network security control",
-      icon: "🔥",
+      title: "PicoCTF Reverse",
+      description: "Binary analysis & exploitation",
+      icon: "⚡",
       color: "border-warning/20 text-warning",
       hoverColor: "hover:border-warning/40"
     },
     {
-      title: "Vulnerability Scanner",
-      description: "Automated security audit",
-      icon: "🔎",
+      title: "OverTheWire Stego",
+      description: "Hidden data extraction techniques",
+      icon: "🕵️",
       color: "border-danger/20 text-danger",
       hoverColor: "hover:border-danger/40"
     },
     {
-      title: "Incident Response",
-      description: "Security breach handling",
-      icon: "🚨",
+      title: "CyberTalents PWN",
+      description: "Buffer overflow & ROP chains",
+      icon: "💥",
       color: "border-primary/20 text-primary",
       hoverColor: "hover:border-primary/40"
     }
