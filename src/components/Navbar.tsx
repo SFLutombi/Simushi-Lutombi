@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
             className="flex items-center cursor-pointer group" 
             onClick={() => navigate('/')}
           >
-            <h1 className="text-3xl font-bold text-primary tracking-tight">LUTOMBI</h1>
+            <h1 className="text-3xl font-bold text-primary tracking-tight">SFL</h1>
           </div>
 
           {/* Desktop Navigation */}

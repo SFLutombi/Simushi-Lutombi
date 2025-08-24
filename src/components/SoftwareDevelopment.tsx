@@ -63,7 +63,7 @@ const SoftwareDevelopment: React.FC = () => {
           <p className="text-body max-w-4xl mx-auto text-text-secondary">
             Code is the magic layer that makes engineering come alive. I like using software to
             automate the boring stuff, simulate complex systems, or just make things more user-
-            friendly. For me, coding isn’t separate from engineering. It’s the language that makes
+            friendly. For me, coding isn't separate from engineering. It's the language that makes
             technology smarter and more adaptable.
           </p>
         </div>
@@ -73,7 +73,11 @@ const SoftwareDevelopment: React.FC = () => {
           <div className="order-1">
             <div className="relative group">
               <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-secondary/10 border border-border-light rounded-2xl flex items-center justify-center relative overflow-hidden shadow-elevated">
-                <div className="text-8xl relative z-10">💻</div>
+                <img 
+                  src="/webwriter.png" 
+                  alt="Webwriter - AI-powered webapp for webserialists" 
+                  className="w-full h-full object-cover object-[center_40%] rounded-2xl"
+                />
                 
                 {/* Subtle accent ring */}
                 <div className="absolute inset-4 rounded-2xl border border-primary/20"></div>
@@ -81,7 +85,7 @@ const SoftwareDevelopment: React.FC = () => {
               
               {/* Professional accent */}
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent rounded-full flex items-center justify-center shadow-elevated">
-                <span className="text-white text-4xl">⚡</span>
+                <span className="text-white text-4xl">✨</span>
               </div>
             </div>
           </div>
@@ -90,31 +94,31 @@ const SoftwareDevelopment: React.FC = () => {
             <Card className="bg-card-bg border-border-light shadow-subtle hover:shadow-elevated transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-3xl font-semibold text-text-primary font-sf mb-3">
-                  AI-Powered Learning Platform
+                  Webwriter
                 </CardTitle>
                 <CardDescription className="text-lg text-primary font-medium">
-                  Personalized education with machine learning
+                  AI-powered webapp designed to help webserialists
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-text-secondary leading-relaxed">
-                  Developed a comprehensive learning management system that uses artificial 
-                  intelligence to personalize educational content for each student. The platform 
-                  features adaptive learning paths, real-time progress tracking, and intelligent 
-                  content recommendations based on learning patterns.
+                  Developed a comprehensive web application that helps webserialists write and manage their stories. 
+                  The platform features an intelligent text editor with AI-powered suggestions, world-building tools, 
+                  and chapter management. Built with modern web technologies and integrated Gemini AI for enhanced 
+                  writing assistance.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-3 py-1 bg-gray-50 border border-primary/20 text-primary rounded-lg text-sm font-medium">
-                    React
+                    Next.js
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-accent/20 text-accent rounded-lg text-sm font-medium">
-                    Node.js
+                    Django Ninja
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-secondary/20 text-secondary rounded-lg text-sm font-medium">
-                    TensorFlow
+                    Figma
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-danger/20 text-danger rounded-lg text-sm font-medium">
-                    MongoDB
+                    Gemini AI
                   </span>
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary-dark transition-all duration-300 shadow-subtle hover:shadow-elevated hover:-translate-y-0.5 font-medium">

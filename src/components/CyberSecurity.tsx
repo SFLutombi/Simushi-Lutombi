@@ -61,9 +61,9 @@ const CyberSecurity: React.FC = () => {
           </div>
           <div className="w-20 h-0.5 bg-primary rounded-full mx-auto mb-8"></div>
           <p className="text-body max-w-4xl mx-auto text-text-secondary">
-            What’s the point of building clever systems if they can’t protect themselves?
+            What's the point of building clever systems if they can't protect themselves?
             Cybersecurity keeps me thinking ahead: about vulnerabilities, risks, and the human side
-            of tech safety. It’s not just about defense; it’s about building trust into every line
+            of tech safety. It's not just about defense; it's about building trust into every line
             of code and every piece of hardware.
           </p>
         </div>
@@ -74,32 +74,32 @@ const CyberSecurity: React.FC = () => {
             <Card className="bg-card-bg border-border-light shadow-subtle hover:shadow-elevated transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-3xl font-semibold text-text-primary font-sf mb-3">
-                  AI-Powered Threat Intelligence Platform
+                  CTF Write-up: Sanren Forensics Challenge
                 </CardTitle>
                 <CardDescription className="text-lg text-primary font-medium">
-                  Machine learning-based security monitoring
+                  Digital forensics investigation and evidence analysis
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-text-secondary leading-relaxed">
-                  Built a comprehensive threat intelligence platform that uses artificial 
-                  intelligence to detect, analyze, and respond to cybersecurity threats in 
-                  real-time. The system integrates multiple data sources, applies machine 
-                  learning algorithms for pattern recognition, and provides automated incident 
-                  response capabilities.
+                  Completed a challenging forensics challenge from the Sanren CTF competition, 
+                  demonstrating advanced digital investigation skills. The challenge involved 
+                  analyzing memory dumps, extracting hidden files, and reconstructing attack 
+                  timelines from various digital artifacts. Successfully identified malicious 
+                  processes and uncovered the complete attack chain.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-3 py-1 bg-gray-50 border border-primary/20 text-primary rounded-lg text-sm font-medium">
-                    Python
+                    Memory Forensics
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-accent/20 text-accent rounded-lg text-sm font-medium">
-                    TensorFlow
+                    File Analysis
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-secondary/20 text-secondary rounded-lg text-sm font-medium">
-                    Elasticsearch
+                    Timeline Reconstruction
                   </span>
                   <span className="px-3 py-1 bg-gray-50 border border-danger/20 text-danger rounded-lg text-sm font-medium">
-                    Docker
+                    CTF Challenges
                   </span>
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary-dark transition-all duration-300 shadow-subtle hover:shadow-elevated hover:-translate-y-0.5 font-medium">
@@ -112,15 +112,19 @@ const CyberSecurity: React.FC = () => {
           <div className="order-1 lg:order-2">
             <div className="relative group">
               <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-secondary/10 border border-border-light rounded-2xl flex items-center justify-center relative overflow-hidden shadow-elevated">
-                <div className="text-8xl relative z-10">🔒</div>
+                <img 
+                  src="/sanren.png" 
+                  alt="Sanren CTF Forensics Challenge" 
+                  className="w-full h-full object-cover object-[center_40%] rounded-2xl"
+                />
                 
                 {/* Subtle accent ring */}
                 <div className="absolute inset-4 rounded-2xl border border-primary/20"></div>
               </div>
               
               {/* Professional accent */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full flex items-center justify-center shadow-elevated">
-                <span className="text-white text-4xl">🤖</span>
+              <div className="absolute -bottom-6 -right-6 w-32 h-28 bg-accent rounded-full flex items-center justify-center shadow-elevated">
+                <span className="text-white text-3xl">🔍</span>
               </div>
             </div>
           </div>
